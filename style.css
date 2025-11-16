@@ -1,0 +1,1583 @@
+body{
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    display: grid;
+    grid-template-columns:repeat( auto-fill, minmax( 180px, 1fr));
+    gap: 50px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    
+}
+
+.texto-capa1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 		#4A90E2;
+    border-color: black;
+    border-radius: 10px;
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 1px 3px rgba(0,0,0,0.6);;
+}
+
+.texto-capa1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color, #3e64a6c7); /*00D4FF*/ 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.texto-capa1:hover::before {
+    opacity: 1;
+}
+
+.texto-capa1:hover .caixa {
+    opacity: 1;
+    z-index: 2;
+}
+:hover.texto-capa1{
+    width: 300px;
+    color: rgba(245, 245, 245, 0);
+}
+
+
+.caixa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+
+/*CAIXA 2*/
+
+.texto-capa2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #50E3C2;
+    border-color: black;
+    border-radius: 10px;
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    box-shadow: 5px 1px 3px rgba(0,0,0,0.6);;
+
+}
+
+.texto-capa2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color, #3e64a6c7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.texto-capa2:hover::before {
+    opacity: 1;
+   
+}
+
+.texto-capa2:hover .caixa {
+    opacity: 1;
+    z-index: 2;
+   
+}
+:hover.texto-capa2{
+    width: 300px;
+    color: rgba(245, 245, 245, 0);
+}
+
+/*CAIXA 3*/
+
+.texto-capa3{
+    display: flex;
+    background-color: #F5A623;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-radius: 10px;
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    box-shadow: 5px 1px 3px rgba(0,0,0,0.6);
+}
+
+.texto-capa3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color, #3e64a6c7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    
+}
+
+.texto-capa3:hover::before {
+    opacity: 1;
+}
+
+.texto-capa3:hover .caixa {
+    opacity: 1;
+    z-index: 2;
+}
+
+:hover.texto-capa3{
+    width: 300px;
+    color: rgba(245, 245, 245, 0);
+}
+
+/*CAIXA 4*/
+
+.texto-capa4{
+    display: flex;
+    background-color: 	#F76B1C;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-radius: 10px;
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+     box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.493) ;
+}
+
+.texto-capa4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color, #3e64a6c7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.texto-capa4:hover::before {
+    opacity: 1;
+}
+
+.texto-capa4:hover .caixa {
+    opacity: 1;
+    z-index: 2;
+}
+
+:hover.texto-capa4{
+    width: 300px;
+    color: rgba(245, 245, 245, 0);
+}
+
+/*CAIXA 5*/
+
+.texto-capa5{
+    display: flex;
+    background-color: #9013FE;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-radius: 10px;
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    box-shadow: 5px 1px 3px rgba(0,0,0,0.6);
+     
+}
+
+.texto-capa5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color, #3e64a6c7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.texto-capa5:hover::before {
+    opacity: 1;
+}
+
+.texto-capa5:hover .caixa {
+    opacity: 1;
+    z-index: 2;
+}
+
+:hover.texto-capa5{
+    width: 300px;
+    color: rgba(245, 245, 245, 0);
+}
+
+/*DADOS*/
+
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* duas colunas */
+    gap: 3px; /* espaçamento entre os itens */
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    position: absolute;
+    top: 50%; /* deixa mais para baixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caixa p {
+    font-family: 'Poppins', sans-serif; /* ou outra fonte moderna */
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* destaque no fundo */
+    margin: 0;
+}
+.caixa p {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px); /* efeito de vidro fosco */
+}
+.caixa p {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: aparecer 1s ease forwards;
+}
+.pais{
+    position: relative;
+    left:70px;
+}
+.tmax{
+    position: relative;
+    top: 0px;
+}
+.tmin{
+    position: relative;
+    top: 64px;
+}
+.weatherType{
+    position: absolute;
+    top: 160px;
+}
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*Ceu Limpo*/
+
+/* Animações para as nuvens */
+@keyframes flutuarNuvem1 {
+    0% { transform: translateX(0px) translateY(0px); }
+    25% { transform: translateX(2px) translateY(-1px); }
+    50% { transform: translateX(4px) translateY(0px); }
+    75% { transform: translateX(2px) translateY(1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem2 {
+    0% { transform: translateX(0px) translateY(0px); }
+    30% { transform: translateX(-1px) translateY(2px); }
+    60% { transform: translateX(3px) translateY(-1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem3 {
+    0% { transform: translateX(0px) translateY(0px); }
+    20% { transform: translateX(3px) translateY(2px); }
+    70% { transform: translateX(-2px) translateY(-1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem4 {
+    0% { transform: translateX(0px) translateY(0px); }
+    40% { transform: translateX(-1px) translateY(-2px); }
+    80% { transform: translateX(3px) translateY(1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes pulsarSol {
+    0% { 
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0 0 20px rgba(232, 226, 116, 0.6);
+    }
+    25% { 
+        transform: scale(1.05) rotate(90deg);
+        box-shadow: 0 0 30px rgba(232, 226, 116, 0.8);
+    }
+    50% { 
+        transform: scale(1.1) rotate(180deg);
+        box-shadow: 0 0 40px rgba(232, 226, 116, 1);
+    }
+    75% { 
+        transform: scale(1.05) rotate(270deg);
+        box-shadow: 0 0 30px rgba(232, 226, 116, 0.8);
+    }
+    100% { 
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 20px rgba(232, 226, 116, 0.6);
+    }
+}
+
+
+#img0{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;
+}
+#img1{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;
+}
+#img2{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;
+}
+#img3{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;
+}
+#img4{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;}
+
+.NuvensLimpo{
+    
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: -238px;
+    left: -78px;
+}
+
+.ceu{
+    background-color: #00D4FF;
+    height: 150px;
+    
+}
+
+.sol{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #e8e274;
+    background: radial-gradient(circle,rgba(232, 226, 116, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    animation: pulsarSol 8s ease-in-out infinite;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+
+
+.nuvem1{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 70px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 80px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 95px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 110px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 120px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 110px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 26px;
+    left: 95px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 80px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1B{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 170px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2B{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 180px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3B{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4B{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 210px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5B{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 220px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6B{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 210px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7B{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 26px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8B{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 180px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1C{
+    border-radius: 50%;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 45px;
+    left: 130px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2C{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3C{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 155px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4C{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5C{
+    border-radius: 50%;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6C{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7C{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 47px;
+    left: 155px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8C{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1D{
+    border-radius: 50%;
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 60px;
+    left: 210px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2D{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3D{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 235px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4D{
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5D{
+    border-radius: 50%;
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 60px;
+    left: 260px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6D{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 65px;
+    left: 250px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7D{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 62px;
+    left: 235px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8D{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 65px;
+    left: 220px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2E{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 210px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 102px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8E{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 180px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1F{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2F{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3F{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 105px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4F{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5F{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6F{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 105px;
+    left: 120px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7F{
+    border-radius: 50%;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 102px;
+    left: 105px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8F{
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 90px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+/*Ceu nublado*/
+
+
+
+@keyframes flutuarNuvem1 {
+    0% { transform: translateX(0px) translateY(0px); }
+    25% { transform: translateX(2px) translateY(-1px); }
+    50% { transform: translateX(4px) translateY(0px); }
+    75% { transform: translateX(2px) translateY(1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem2 {
+    0% { transform: translateX(0px) translateY(0px); }
+    30% { transform: translateX(-1px) translateY(2px); }
+    60% { transform: translateX(3px) translateY(-1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem3 {
+    0% { transform: translateX(0px) translateY(0px); }
+    20% { transform: translateX(3px) translateY(2px); }
+    70% { transform: translateX(-2px) translateY(-1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes flutuarNuvem4 {
+    0% { transform: translateX(0px) translateY(0px); }
+    40% { transform: translateX(-1px) translateY(-2px); }
+    80% { transform: translateX(3px) translateY(1px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+
+
+
+
+.NuvensNublado{
+    height:176px;
+    width: 373px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+
+.ceuNublado{
+    background-color: rgb(207, 201, 196);
+    height: 150px;
+    
+}
+
+
+.nuvem1Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 70px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 80px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 95px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 110px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 120px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 110px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 26px;
+    left: 95px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8Nublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 80px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 170px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 180px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    left: 210px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    left: 220px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6BNublado{
+    border-radius: 50%;
+    background-color: #545253#545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 29px;
+    left: 210px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 26px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8BNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 29px;
+    left: 180px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 45px;
+    left: 130px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 155px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 47px;
+    left: 155px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8CNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 60px;
+    left: 210px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 50px;
+    left: 235px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 60px;
+    left: 260px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 65px;
+    left: 250px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 62px;
+    left: 235px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8DNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 65px;
+    left: 220px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 210px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 102px;
+    left: 195px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8ENublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 180px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 105px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 105px;
+    left: 120px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 102px;
+    left: 105px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8FNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 105px;
+    left: 90px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
+
+.nuvem1GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 59px;
+    left: 10px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem2GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 49px;
+    left: 20px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem3GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 49px;
+    left: 35px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem4GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 49px;
+    left: 50px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+.nuvem5GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 59px;
+    left: 60px;
+    animation: flutuarNuvem1 4s ease-in-out infinite;
+}
+.nuvem6GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 64px;
+    left: 50px;
+    animation: flutuarNuvem2 4s ease-in-out infinite;
+}
+.nuvem7GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 61px;
+    left: 35px;
+    animation: flutuarNuvem3 4s ease-in-out infinite;
+}
+.nuvem8GNublado{
+    border-radius: 50%;
+    background-color: #545253;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 64px;
+    left: 20px;
+    animation: flutuarNuvem4 4s ease-in-out infinite;
+}
+
